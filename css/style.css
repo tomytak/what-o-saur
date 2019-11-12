@@ -1,0 +1,206 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+main {
+  height: 100%;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 730px;
+  margin: 0 auto;
+}
+
+/* typoraphy */
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+  font-family: "roboto condensed", sans-serif;
+  color: white;
+}
+
+p {
+  font-family: "Mr Eaves Mod OT", sans-serif;
+  color: white;
+}
+/* STRUCTURE */
+
+#home {
+  /* background-image:linear-gradient(90deg #DEA800 50%, #367ACC 50%); */
+  /* background: linear-gradient(to right,  #DEA800 0%,#DEA800 50%,#367ACC 50%,#367ACC 100%); */
+}
+.site-header {
+  background-image: url("../img/nav.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 730px;
+  padding-bottom: 2em;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  min-height: 124px;
+  /* background-color: rgba(255,0,0,.3); */
+}
+
+.site-header h1 {
+  margin: 0;
+}
+
+/* SITE ID */
+.site-id {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 1em;
+  transform: translatex(-50%);
+}
+
+.site-id a {
+  color: #00891a;
+}
+
+#about_button {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translatex(-50%);
+  text-transform: uppercase;
+  color: #00891a;
+}
+/* SITE NAV */
+.site-nav {
+  font-family: "Roboto condensed", Helvetica, arial, sans-serif;
+  text-transform: uppercase;
+  color: black;
+}
+
+.site-nav ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.site-nav li {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.site-nav a {
+}
+.site-nav img {
+  display: block;
+}
+
+#aboutbutton {
+  position: absolute;
+}
+
+ul,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+img.nav {
+  max-width: 5em;
+  height: auto;
+}
+
+/* .identity h2, p{
+    color: #00891A;
+    }
+    p {
+        border: solid 1px #00891A;
+        position: absolute;
+        text-align: center;
+        top: 0;
+        left: 50%;
+        padding: 3px;
+        text-transform: uppercase;
+        transition: opacity .35s ease; 
+       }
+} */
+
+/* HERO */
+
+.half-container {
+  max-width: 365px;
+  /* background-color: rgba(255,0,0,.3); */
+  margin-top: 200px;
+}
+
+.hero {
+  display: flex;
+  height: 100%;
+}
+.hero > * {
+  flex-grow: 1;
+  width: 50%;
+}
+
+.hero h1,
+.hero h2 {
+  margin: 0;
+}
+
+.hero h1 {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin-top: 140px;
+}
+
+.home-saurischia {
+  background: #dea800;
+  justify-content: flex-end;
+}
+
+.home-ornithischia {
+  background: #367acc;
+}
+
+.home-saurischia,
+.home-ornithischia {
+  display: flex;
+  /* padding-top: 30vh; */
+}
+
+@media (max-width: 767px) {
+  /* HERO */
+  .hero {
+    display: block;
+  }
+  .hero > * {
+    width: auto;
+  }
+
+  .home-saurischia,
+  .home-ornithischia {
+    display: block;
+  }
+
+  .hero h1,
+  .half-container {
+    margin-top: 0;
+    padding-top: 6em;
+    max-width: none;
+  }
+}
+
+/* color_box { margin: 1em;
+padding 1em;
+height 125px;
+width: 125px;
+float: left;
+} */
